@@ -2,7 +2,7 @@
 #
 # VERSION               0.0.1
 
-FROM      openjdk:latest
+FROM      openjdk:6
 
 MAINTAINER Gen Takahashi "gendosu@gmail.com"
 
@@ -24,4 +24,3 @@ RUN apt-get update \
 &&  if [ -e /etc/localtime ]; then rm /etc/localtime; fi \
 &&  ln -s /usr/share/zoneinfo/Asia/Tokyo /etc/localtime \
 &&  dpkg-reconfigure -f noninteractive tzdata
-

@@ -2,7 +2,7 @@
 #
 # VERSION               0.0.1
 
-FROM      openjdk:alpine
+FROM      openjdk:6-alpine
 
 MAINTAINER Gen Takahashi "gendosu@gmail.com"
 
@@ -13,4 +13,3 @@ RUN apk add --update \
 &&  cp /usr/share/zoneinfo/Japan /etc/localtime \
 &&  apk del tzdata \
 &&  rm -rf /var/cache/apk/*
-
